@@ -3,10 +3,14 @@ import 'package:flutter/material.dart';
 
 /// ## ViewModel class
 class ViewModel extends ChangeNotifier {
-  Color _color = const Color(kWhiteColor);
+  Color _color;
 
   /// ### color getter
   Color get color => _color;
+
+  /// ### constructor
+  ViewModel({Color? initialColor})
+      : _color = initialColor ?? const Color(kWhiteColor);
 
   /// ### chance color function
   void changeColor() {
