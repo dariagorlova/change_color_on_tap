@@ -16,10 +16,7 @@ class Screen extends StatelessWidget {
         child: AnimatedContainer(
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
-          //color: viewModel?.color ?? Colors.red,
-          decoration: BoxDecoration(
-            color: viewModel?.color ?? Colors.red,
-          ),
+          color: viewModel?.color ?? Colors.red,
           duration: const Duration(seconds: 1),
           curve: Curves.easeInCubic,
           child: const Center(
